@@ -1,0 +1,35 @@
+{
+  "name": "coffeelint-no-focused-jasmine-specs",
+  "version": "0.0.1",
+  "description": "CoffeeLint rule to ensure that all your jasmine specs run",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/coffeelint/bin/coffeelint src/ spec/",
+    "jasmine": "./node_modules/coffee-script/bin/coffee jasmine_runner.coffee",
+    "test": "npm run lint && npm run jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blamattina/coffeelint-no-focused-jasmine-specs"
+  },
+  "keywords": [
+    "coffeelint",
+    "jasmine",
+    "focused",
+    "specs",
+    "coffeelintrule"
+  ],
+  "bugs": {
+    "url": "https://github.com/blamattina/coffeelint-no-focused-jasmine-specs/issues"
+  },
+  "homepage": "https://github.com/blamattina/coffeelint-no-focused-jasmine-specs",
+  "author": "blamattina",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "coffeelint": "^1.10.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.3.1"
+  }
+}
