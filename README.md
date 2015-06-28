@@ -11,7 +11,7 @@ knot develops in your throat. You check the project, only to have your worst
 fears confirmed: **You commited an fdescribe block!**  You remove it to uncover
 30 spec failures.
 
-That would never happen to you right?  Of course not, this isn't you're first
+That would never happen to you right?  Of course not, this isn't your first
 rodeo.  You're using coffeelint-no-focused-jasmine-specs.
 
 ## Installation
