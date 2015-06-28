@@ -1,6 +1,5 @@
 # coffeelint-no-focused-jasmine-specs
-
----
+[![Circle CI](https://circleci.com/gh/blamattina/coffeelint-no-focused-jasmine-specs.svg?style=svg)](https://circleci.com/gh/blamattina/coffeelint-no-focused-jasmine-specs)
 
 Deadlines are looming and you're **focusing** on getting those last few specs
 green..
