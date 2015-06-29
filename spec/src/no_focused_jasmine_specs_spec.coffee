@@ -56,5 +56,3 @@ describe 'test', ->
       expect(error.level).toBe 'warn'
       expect(error.lineNumber).toBe 2
       expect(error.rule).toBe 'no_focused_jasmine_specs'
-
-

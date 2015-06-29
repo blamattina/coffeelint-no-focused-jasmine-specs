@@ -1,6 +1,6 @@
 {
   "name": "coffeelint-no-focused-jasmine-specs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "CoffeeLint rule to ensure that all your jasmine specs run",
   "main": "index.js",
   "scripts": {

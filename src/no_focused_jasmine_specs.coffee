@@ -1,3 +1,4 @@
+FOCUSED_SPECS = ['fdescribe', 'fit']
 
 class NoFocusedJasmineSpecs
   rule:
@@ -9,9 +10,10 @@ class NoFocusedJasmineSpecs
       encountered.
     '''
 
-  lintLine: (line, lineApi) ->
-    tokens = line.trim().split " "
-    if tokens[0] in ['fdescribe', 'fit']
+  tokens: ['IDENTIFIER']
+
+  lintToken: (token, tokenApi) ->
+    if token[1] in FOCUSED_SPECS
       true
 
 module.exports = NoFocusedJasmineSpecs
