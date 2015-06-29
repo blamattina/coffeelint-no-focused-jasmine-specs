@@ -4,7 +4,7 @@
   "description": "CoffeeLint rule to ensure that all your jasmine specs run",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/coffeelint/bin/coffeelint src/ spec/",
+    "lint": "coffeelint --rules index.js src/ spec/",
     "jasmine": "./node_modules/coffee-script/bin/coffee jasmine_runner.coffee",
     "test": "npm run lint && npm run jasmine"
   },
@@ -26,7 +26,9 @@
   "author": "blamattina",
   "license": "MIT",
   "dependencies": {
-    "coffee-script": "^1.9.3",
+    "coffee-script": "^1.9.3"
+  },
+  "peerDependencies": {
     "coffeelint": "^1.10.1"
   },
   "devDependencies": {

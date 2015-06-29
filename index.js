@@ -1,2 +1,2 @@
-require('coffee-script');
-module.exports = require('./src/no-focused-jasmine-specs');
+require('coffee-script/register');
+module.exports = require('./src/no_focused_jasmine_specs.coffee');
