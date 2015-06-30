@@ -1,5 +1,6 @@
 # coffeelint-no-focused-jasmine-specs
-[![Circle CI](https://circleci.com/gh/blamattina/coffeelint-no-focused-jasmine-specs.svg?style=svg)](https://circleci.com/gh/blamattina/coffeelint-no-focused-jasmine-specs)
+[![CircleCI branch](https://img.shields.io/circleci/project/blamattina/coffeelint-no-focused-jasmine-specs.svg?style=flat-square)](https://circleci.com/gh/blamattina/coffeelint-no-focused-jasmine-specs)
+[![npm](https://img.shields.io/npm/v/coffeelint-no-focused-jasmine-specs.svg?style=flat-square)](https://www.npmjs.com/package/coffeelint-no-focused-jasmine-specs)
 
 Deadlines are looming and you're **focusing** on getting those last few specs
 green..
