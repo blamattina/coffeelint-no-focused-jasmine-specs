@@ -9,11 +9,12 @@ class NoFocusedJasmineSpecs
       This rule will call linting to fail if a focused (fdescribe/fit) spec is
       encountered.
     '''
+    overrides: []
 
   tokens: ['IDENTIFIER']
 
   lintToken: (token, tokenApi) ->
-    if token[1] in FOCUSED_SPECS
+    if token[1] in FOCUSED_SPECS.concat(overrides)
       true
 
 module.exports = NoFocusedJasmineSpecs
