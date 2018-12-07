@@ -56,3 +56,25 @@ describe 'test', ->
       expect(error.level).toBe 'warn'
       expect(error.lineNumber).toBe 2
       expect(error.rule).toBe 'no_focused_jasmine_specs'
+
+  describe 'a focused anything spec', ->
+
+    beforeEach ->
+      config =
+        no_focused_jasmine_specs:
+          level: 'warn'
+          additional: ['ffoo']
+
+      ffooSpec = '''
+        describe "A suite", ->
+          ffoo "contains a focus spec", ->
+            expect(true).toBe false
+      '''
+      @errors = coffeelint.lint(ffooSpec, config)
+
+    it 'has an error on line 1', ->
+      expect(@errors.length).toBe 1
+      error = @errors[0]
+      expect(error.level).toBe 'warn'
+      expect(error.lineNumber).toBe 2
+      expect(error.rule).toBe 'no_focused_jasmine_specs'
